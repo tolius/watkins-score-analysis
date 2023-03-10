@@ -24,7 +24,7 @@ def get_uci_moves(san_moves):
 
 
 def main():
-    url = f"https://lichess.org/api/tournament/dPFhERel/games"
+    url = "https://lichess.org/api/tournament/dPFhERel/games"
     watkins_path = "C:\\path\\to\\Watkins-reader.exe"
     solution_path = "C:\\path\\to\\the\\solution\\file\\e3wins.rev4"
     # Input: 'e2e3 g7g5 f1a6\n' Output: 'b7a6\n' if it's the solution else 'null\n'
@@ -74,7 +74,7 @@ def main():
     print("Top 10 Watkins scores:")
     i = 1
     for item in items:
-        print(f"{i:2}. #{item[1].score:02} Game: https://lichess.org/{item[1].game_id} - {item[0]}")
+        print(f"{i:2}. #{item[1].score:02} - https://lichess.org/{item[1].game_id} - {item[0]}")
         if i >= 10:
             break
         i += 1
@@ -82,16 +82,16 @@ def main():
     # Output:
     # Tournament info: 68 players, 218 games
     # Top 10 Watkins scores:
-    #  1. #13 Game: https://lichess.org/w8KyGNVN - Gary_JBS
-    #  2. #11 Game: https://lichess.org/moKQV4Is - randimatrix
-    #  3. #09 Game: https://lichess.org/GTDQG8lQ - wayne_bruce
-    #  4. #09 Game: https://lichess.org/vXv9ZjDV - MiladLouak0
-    #  5. #09 Game: https://lichess.org/NoJjtrlY - SuperSrbinRS
-    #  6. #09 Game: https://lichess.org/QvvWoOUu - Afiq2017
-    #  7. #08 Game: https://lichess.org/HDinpqW4 - dSinner
-    #  8. #06 Game: https://lichess.org/ixcgC7q9 - mental_suicide
-    #  9. #06 Game: https://lichess.org/8ylICEio - Serge007
-    # 10. #05 Game: https://lichess.org/mel1LshW - L0g1cal-N0de
+    #  1. #13 - https://lichess.org/w8KyGNVN - Gary_JBS
+    #  2. #11 - https://lichess.org/moKQV4Is - randimatrix
+    #  3. #09 - https://lichess.org/GTDQG8lQ - wayne_bruce
+    #  4. #09 - https://lichess.org/vXv9ZjDV - MiladLouak0
+    #  5. #09 - https://lichess.org/NoJjtrlY - SuperSrbinRS
+    #  6. #09 - https://lichess.org/QvvWoOUu - Afiq2017
+    #  7. #08 - https://lichess.org/HDinpqW4 - dSinner
+    #  8. #06 - https://lichess.org/ixcgC7q9 - mental_suicide
+    #  9. #06 - https://lichess.org/8ylICEio - Serge007
+    # 10. #05 - https://lichess.org/mel1LshW - L0g1cal-N0de
 
 
 if __name__ == "__main__":
